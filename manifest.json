@@ -1,0 +1,51 @@
+{
+  "manifest_version": 2,
+  "name": "ChatGPT Insights",
+  "version": "1.2",
+  "description": "Analyze and extract insights from your ChatGPT conversations, including search queries, thoughts, products, and sources.",
+  "author": "Serge",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://chatgpt.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "ChatGPT Insights",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "web_accessible_resources": [
+    "logo2.png",
+    "logo.png",
+    "icon48.png"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "serge@designwalthamstow.co.uk",
+      "strict_min_version": "68.0"
+    }
+  }
+}
