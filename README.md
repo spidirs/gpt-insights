@@ -7,7 +7,7 @@ The tool allows you to export locally the relevant data as CSV. More work is nee
 
 This is but a Firefox port of the [ChatGPT Path Chrome extension from Ayima](https://chromewebstore.google.com/detail/chatgpt-path/kiopibcjdnlpamdcdcnphaajccobkban?authuser=0&hl=en), so all credit goes to them.
 
-Known limitations
+*Known limitations*
 
 * it doesn't work well with Firefox Multi-Account Containers.
 
